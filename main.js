@@ -2,6 +2,6 @@ $(document).ready(function(){
     $('.header').height($(window).height());
   })
 
-  $('.carousel').carousel({
-    interval: 3000
- })
+//   $('.carousel').carousel({
+//     interval: 10
+//  })
