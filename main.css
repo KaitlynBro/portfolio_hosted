@@ -9,6 +9,13 @@
     font-family: 'Poppins', sans-serif !important;
   }  
 
+  @media (max-width:1180px) {
+    h1 {
+      font-size: 2rem !important;
+      line-height: 3rem !important;
+    }
+  }
+
   /* nav styles */
 
   .navbar {
@@ -312,6 +319,7 @@
   @media(max-width:1180px) {
     .carousel-content {
       flex-direction: column;
+      margin: 0;
     }
     .carousel-inner {
       width: 100% !important;
@@ -328,9 +336,17 @@
       align-items: unset !important;
     }
     .controls-container {
-      right: 0;
-      top: 0;
-      left: unset;
+      position: unset;
+      display: unset;
+    }
+    .carousel-item img {
+      max-height: 250px;
+    }
+    .image-container span {
+      position: unset;
+    }
+    .carousel.slide {
+      margin: 0 0 40px 0;
     }
   }
   /* carousel content */
