@@ -1,20 +1,31 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
   /* general styles */
   .body {
-    padding: 0;
-    margin: 0;
     color: black;
     background:#FFF;
+    max-width: 1000px;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif !important;
   }  
 
-  @media (max-width:1180px) {
-    h1 {
-      font-size: 2rem !important;
-      line-height: 3rem !important;
-    }
+  h1 {
+    font-family: 'Lora', serif;
+    position: relative;
   }
+
+  h1:before {
+    content: '';
+    background: #4CD7D0;
+    width: 350px;
+    position: absolute;
+    z-index: -1;
+    bottom: 5px;
+    left: 0;
+    height: 18px;
+  }
+
 
   /* nav styles */
 
@@ -86,271 +97,36 @@
   }
 
   /* header styles */
-  .masthead {
-    position: relative;
-    max-width: 90%;
-    margin: 0 auto;
-    height: 95vh;
-  }
-
-  .masthead .text {
-    text-align: right;
-    z-index: 100;
-  }
-
-  .masthead-heading span {
-    color: #fff;
-    background-color: #C38370;
-    padding: 0 6px;
-    font-weight: 400;
-  }
-
-  .header-img {
-    height: 100%;
-    z-index:-1;
-    object-fit: cover;
-  }
-
-  /* about section */
-  .breakpoint-drop {
-    flex-direction: row;
-  }
-  #about {
-    background-color:#E4B7A0;
-  }
-
-  .portrait {
-    max-width: 500px;
-  }
-
-  .about-txt {
-    font-weight: 300;
-  }
-
-  a.nav-link.skills {
-    font-weight: 600;
-  }
-
-  @media(max-width:1195px) {
-    .breakpoint-drop {
-      flex-direction: column;
-    }
-    .portrait {
-      max-width: 90%;
-      margin: 20px;
-    }
-  }
   
-  /* projects section */
-
-  /* general carousel styles */
-
-  .carousel.slide {
-    margin-bottom: 100px;
-  }
-
-  .carousel-item {
-     -webkit-transition: 0.6s ease-in-out top;
-     -moz-transition: 0.6s ease-in-out top;
-     -ms-transition: 0.6s ease-in-out top;
-     -o-transition: 0.6s ease-in-out top;
-     transition: 0.6s ease-in-out top;
-     position: relative;
-  }
-
-  .carousel .active {
-    top: 0;
-  }
- 
-  .carousel .next {
-      top: 400px;
-  }
- 
-  .carousel .prev {
-      top: -400px;
-  }
- 
-  .carousel .next.left,
-  .carousel .prev.right {
-      top: 0;
-  }
- 
-  .carousel .active.left {
-      top: -400px;
-  }
- 
-  .carousel .active.right {
-      top: 400px;
-  }
- /* general carousel styles */
-
-  /* slide counter */
-  .carousel-counter {
-    margin-top: 20px;
-  }
-
-  .carousel-counter span {
-    color: black;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .carousel-counter span:after {
-    content: "";
-    position: absolute;
-    left: 44%;
-    background: #000;
-    width: 5%;
-    height: 1px;
-    top: 50%;
-  }
-
-  .carousel-counter span:before {
-    content: "";
-    position: absolute;
-    right: 44%;
-    background: #000;
-    width: 5%;
-    height: 1px;
-    top: 50%;
-  }
-  /* slide counter */
-
-  /* carousel chevrons */
-  .carousel-item-next.carousel-item-left,
-  .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0) !important;
-          transform: translate3d(0, 0, 0) !important;
-  }
-
-  .carousel-item-next,
-  .active.carousel-item-right {
-    -webkit-transform: translate3d(0, -100%, 0) !important;
-        transform: translate3d(0, -100%, 0) !important;
-  }
-  .carousel-item-prev,
-  .active.carousel-item-left {
-    -webkit-transform: translate3d(0, +100%, 0) !important;
-        transform: translate3d(0, +100, 0) !important;
-  }
-
-  .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-image: none;
-  }
-
-  .controls-container {
+  .masthead {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 2%;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    transform: rotate(-270deg);
-  }
-  .carousel-control-next-icon:after {
-    content: '>';
-    font-size: 25px;
-    color: black;
+    justify-content: center;
   }
 
-  .carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 25px;
-    color: black;
-  }
-  /* carousel chevrons */
-
-  /* carousel content */
-  .carousel-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    margin: 30px 0 0 0;
+  .scroll-btn {
+    max-width: 350px;
   }
 
-  .carousel-content a {
-    background: #A45C40;
+  .btn.button {
+    background-color: #000;
+    border:none;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin-top: 5px;
+  }
+
+  .button svg.down-arrow {
+    transform: rotate(-90deg);
     transition: 0.5s;
   }
 
-  .carousel-content a button {
-    color: #fff;
+  .button:hover svg.down-arrow {
+    transform: rotate(0deg);
   }
-
-  .carousel-content a:hover {
-    background-color:#C38370;
-  }
-
-  .carousel-content a:hover button {
-    color:#fff;
-  }
-
-  .carousel-item h1 {
-    font-weight: 400;
-    text-transform: none;
-  }
-
-  .image-container {
-    position: relative;
-  }
-
-  .image-container span {
-    position: absolute;
-    top: 50%;
-    transform: rotate(-90deg);
-    font-size: 14px;
-    text-transform: uppercase;
-    right: -120px;
-    color: #000;
-  }
-
-  .carousel-item img {
-    width: 100% !important;
-    max-height: 550px;
-    object-fit: cover;
-  }
-
-  @media(max-width:1180px) {
-    .carousel-content {
-      flex-direction: column;
-      margin: 0;
-    }
-    .carousel-inner {
-      width: 100% !important;
-    }
-    .carousel-content a {
-      background-color:unset;
-      border:1px solid #000;
-      transition: 0.5s;
-    }
-    .carousel-content a button {
-      color: #000;
-    }
-    .carousel-content .carousel-text {
-      align-items: unset !important;
-    }
-    .controls-container {
-      position: unset;
-      display: unset;
-    }
-    .carousel-item img {
-      max-height: 250px;
-    }
-    .image-container span {
-      position: unset;
-    }
-    .carousel.slide {
-      margin: 0 0 40px 0;
-    }
-  }
-  /* carousel content */
-
 
    /* footer */
 

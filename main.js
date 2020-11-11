@@ -2,6 +2,10 @@ $(document).ready(function(){
     $('.header').height($(window).height());
   })
 
-//   $('.carousel').carousel({
-//     interval: 10
-//  })
+  $('#openNav').on('click', function() {
+    $('#myNav').css("width", "100%");
+  });
+  
+  $('#closeNav').on('click', function() {
+    $('#myNav').css("width", "0%");
+  });

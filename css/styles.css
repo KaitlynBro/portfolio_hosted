@@ -21,7 +21,6 @@
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
-  --yellow: #ffc107;
   --green: #28a745;
   --teal: #1abc9c;
   --cyan: #17a2b8;
@@ -29,6 +28,13 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #A45C40;
+
+
+  --tiffanyblue: #A4E8E0;
+  --yellow: #F8EA8C;
+  --cyan: #4CD7D0;
+  --freesia:#E1C340;
+
   --secondary: #C38370;
   --tertiary: #E4B7A0;
   --success: #28a745;
@@ -92,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 2rem;
 }
 
 abbr[title],
@@ -363,13 +370,12 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.2;
 }
 
 h1, .h1{
   font-size: 5rem;
-  font-weight: 300;
+  line-height: 8rem;
   letter-spacing: 1px;
   color: #000;
   text-transform: capitalize;
@@ -377,6 +383,8 @@ h1, .h1{
 
 h2, .h2 {
   font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
 }
 
 h3, .h3 {
@@ -2435,8 +2443,6 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
-  color: #212529;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2448,7 +2454,6 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2457,7 +2462,6 @@ textarea.form-control {
   }
 }
 .btn:hover {
-  color: #212529;
   text-decoration: none;
 }
 .btn:focus, .btn.focus {
@@ -10140,10 +10144,10 @@ h3 {
     font-size: 1.5em;
   }
 }
-.masthead {
+/* .masthead {
   padding-top: calc(5rem + 60px);
   padding-bottom: 2rem;
-}
+} */
 .masthead .masthead-heading {
   font-size: 2rem;
   line-height: 3rem;
@@ -10156,10 +10160,10 @@ h3 {
 }
 
 @media (min-width: 992px) {
-  .masthead {
+  /* .masthead {
     padding-top: calc(5rem + 60px);
     padding-bottom: 2rem;
-  }
+  } */
   .masthead .masthead-heading {
     font-size: 2rem;
     line-height: 3rem;
