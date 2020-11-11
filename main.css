@@ -30,6 +30,15 @@
     font-family: 'Lora', serif !important;
   }
 
+  a {
+    
+    color: unset;
+  }
+
+  a:hover{
+    text-decoration: unset !important;
+  }
+
 
   /* nav styles */
 
@@ -133,10 +142,6 @@
   }
 
   /* work */
-/* 
-  .card-section {
-    height:100vh;
-  } */
 
   .cards {
     display: flex;
@@ -146,6 +151,7 @@
   .card {
     width: 33%;
     height: 350px;
+    transition: 0.5s;
   }
 
   .yellow {
@@ -172,8 +178,6 @@
     height: 100%;
     width: 100%;
     transition: .5s ease;
-    background-color:#E1C340;
-    color: white;
   }
 
   .card svg {
@@ -200,7 +204,7 @@
     transition: 0.3s;
   }
 
-  .card-title:hover:before {
+  .card:hover .card-title:before {
     content: ">";
     height: 100% !important;
     text-align: center;
