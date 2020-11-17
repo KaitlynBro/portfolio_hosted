@@ -131,24 +131,13 @@
     width: 100%;
   }
 
-  @media(max-width:420px) {
-    .navbar.mobile {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      border-bottom: 0;
-    }
-    a.nav-link {
-      margin-right: 0 !important;
-      font-weight: 600;
-    }
-  }
 
   /* header styles */
   
   .masthead {
     height: 100vh;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     justify-content: center;
   }
@@ -174,15 +163,6 @@
 
   .button:hover svg.down-arrow {
     transform: rotate(0deg);
-  }
-
-  @media(max-width:420px) {
-    .masthead {
-      width: 90%;
-      margin: 0 auto;
-      height: unset;
-      padding-top: 60px;
-    }
   }
 
   /* work */
@@ -262,29 +242,6 @@
     font-weight: 900;
     color: #4CD7D0;
     background: unset;
-  }
-
-  @media (max-width:768px) {
-    .card-section {
-      padding: 20px !important;
-    }
-    .cards:first-of-type {
-      margin: 0;
-    }
-    .cards.bottom a {
-      width: 30%;
-    }
-  }
-
-  @media (max-width:450px) {
-    .cards.bottom a {
-      width: 100%;
-      margin: 10px 0;
-    }
-
-    .cards.bottom .card.work {
-      width: 100% !important;
-    }
   }
   /* work */
 
@@ -366,33 +323,6 @@
     padding-top: 45px;
   }
 
-  @media (min-width: 1140px) {
-    .hori-timeline .events .event-list .event-date {
-        top: -12px;
-    }
-  }
-  @media (max-width: 880px) {
-    .hori-timeline {
-      justify-content: center;
-    }
-    .hori-timeline .list-inline {
-      flex-direction: column;
-    }
-    .hori-timeline .list-inline .event-list {
-      width: unset;
-    }
-    .hori-timeline .list-inline .event-list:first-of-type:before {
-      content: unset !important;
-    }
-
-    .hori-timeline .list-inline.img {
-      display: none !important;
-    }
-    .hori-timeline .events.text {
-      border: unset;
-    }
-  }
-
   .bg-soft-primary {
     background-color: rgba(64,144,203,.3)!important;
   }
@@ -435,24 +365,6 @@
   .more-info span, .colour-block span {
     font-weight: bold;
   }
-
-  @media(max-width:800px) {
-    .portrait-container {
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-    }
-    .colour-block {
-      padding:10px;
-    }
-  }
-
-  @media(max-width:420px) {
-    .about-section.top {
-      padding-top: 60px !important;
-    }
-  }
   /* about */
 
    /* footer */
@@ -475,4 +387,87 @@
 
   /* footer */
 
+  @media(max-width:420px) {
+    .navbar.mobile {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 0;
+    }
+    a.nav-link {
+      margin-right: 0 !important;
+      font-weight: 600;
+    }
+    .masthead {
+      width: 90%;
+      margin: 0 auto;
+      height: unset;
+      padding: 60px 0 0 0;
+    }
+    .about-section.top {
+      padding-top: 60px !important;
+    }
+  }
 
+  @media (max-width:450px) {
+    .cards.bottom a {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .cards.bottom .card.work {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width:768px) {
+    .card-section {
+      padding: 20px !important;
+    }
+    .cards:first-of-type {
+      margin: 0;
+    }
+    .card-title.work:before, h1:before {
+      content:unset;
+    }
+  }
+
+  @media(max-width:800px) {
+    .portrait-container {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .colour-block {
+      padding:10px;
+    }
+  }
+
+  @media (max-width: 880px) {
+    .hori-timeline {
+      justify-content: center;
+    }
+    .hori-timeline .list-inline {
+      flex-direction: column;
+    }
+    .hori-timeline .list-inline .event-list {
+      width: unset;
+    }
+    .hori-timeline .list-inline .event-list:first-of-type:before {
+      content: unset !important;
+    }
+
+    .hori-timeline .list-inline.img {
+      display: none !important;
+    }
+    .hori-timeline .events.text {
+      border: unset;
+    }
+  }
+
+  @media (min-width: 1140px) {
+    .hori-timeline .events .event-list .event-date {
+        top: -12px;
+    }
+  }
