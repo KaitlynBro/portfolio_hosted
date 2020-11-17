@@ -136,6 +136,7 @@
       position: fixed;
       bottom: 0;
       width: 100%;
+      border-bottom: 0;
     }
     a.nav-link {
       margin-right: 0 !important;
@@ -177,7 +178,6 @@
 
   @media(max-width:420px) {
     .masthead {
-      border-bottom: 4px solid black;
       width: 90%;
       margin: 0 auto;
       height: 70vh;
@@ -322,23 +322,12 @@
     padding-bottom: 0;
   }
 
-  .portrait-container {
-    height: 40vh;
-  }
 
   .portrait {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;  
-    margin: 0 30px;
-  }
-
-  .portrait.one {
-    background-image: url('assets/img/portraitCropped.png');
-  }
-
-  .portrait.two {
-    background-image: url('assets/img/portrait1.png');
+    height:300px;
+    width: 300px;
+    margin: 0;
+    object-fit: cover;
   }
 
   /* timeline */
@@ -381,7 +370,6 @@
         top: -12px;
     }
   }
-
   @media (max-width: 880px) {
     .hori-timeline {
       justify-content: center;
@@ -445,6 +433,24 @@
 
   .more-info span, .colour-block span {
     font-weight: bold;
+  }
+
+  @media(max-width:800px) {
+    .portrait-container {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .colour-block {
+      padding:10px;
+    }
+  }
+
+  @media(max-width:420px) {
+    .about-section.top {
+      padding-top: 60px !important;
+    }
   }
   /* about */
 
