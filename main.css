@@ -450,7 +450,7 @@
     }
     .portrait {
       height: 100%;
-      width: 100%;
+      width: 150px;
     }
     .colour-block {
       padding:10px;
