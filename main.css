@@ -13,41 +13,77 @@
   h1 {
     font-family: 'Lora', serif;
     position: relative;
+    font-size: 55px;
+    line-height: 65px;
   }
 
   h1:before {
     content: '';
     background: #4CD7D0;
-    width: 350px;
+    width: 235px;
     position: absolute;
     z-index: -1;
-    bottom: 5px;
+    bottom: -5px;
     left: 0;
-    height: 18px;
+    height: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
   }
 
   h3 {
-    font-family: 'Lora', serif !important;
+    /* font-family: 'Lora', serif !important; */
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
   }
 
-  h6{
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-size: 15px;
+    line-height: 20px;
     font-weight: 400;
     color: grey;
     text-transform: uppercase;
     letter-spacing: 0.5px;
   }
 
+  p {
+    font-size: 16px;
+  }
+
+  p.quote {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p.text-large {
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+
   a {
-    
     color: unset;
   }
 
   a:hover{
     text-decoration: unset !important;
-  }
-
-  .quote {
-    margin: 0;
   }
 
 
@@ -157,6 +193,7 @@
     font-weight: 600;
     letter-spacing: 0.7px;
     margin-top: 5px;
+    font-size: 18px;
   }
 
   .button svg.down-arrow {
@@ -217,8 +254,6 @@
   }
 
   .card-title.work {
-    font-weight: 500;
-    line-height: 2rem;
     position: relative;
     width: fit-content;
   }
