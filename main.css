@@ -120,6 +120,9 @@
 
   .navbar.mobile {
     border-top: 2px solid #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 
   .navbar.mobile ul {
@@ -453,7 +456,7 @@
       width: 150px;
     }
     .colour-block {
-      padding:10px;
+      padding:20px;
     }
   }
 
@@ -476,6 +479,22 @@
     }
     .hori-timeline .events.text {
       border: unset;
+    }
+    img.prototype-image {
+      max-width: 350px;
+      max-height: 400px;
+    }
+    .page-section.case-study {
+      padding-top: 30px !important;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .overview-content .main {
+      order: 1;
+    }
+    .overview-content .sidebar {
+      order: 0;
     }
   }
 
