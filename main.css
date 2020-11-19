@@ -429,6 +429,13 @@
 
   /* footer */
 
+  @media(max-width:390px) {
+    img.prototype-image {
+      width:250px;
+      height: 300px;
+    }
+  }
+
   @media(max-width:420px) {
     .navbar.mobile {
       position: fixed;
@@ -519,7 +526,7 @@
       border: unset;
     }
     img.prototype-image {
-      max-width: 350px;
+      max-width: 320px;
       max-height: 400px;
     }
     .page-section.case-study {
@@ -533,6 +540,13 @@
     }
     .overview-content .sidebar {
       order: 0;
+      border-bottom: 3px solid black;
+      margin-bottom: 20px;
+    }
+    .overview-content .sidebar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
   }
 
