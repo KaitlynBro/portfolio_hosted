@@ -446,9 +446,6 @@
       height: unset;
       padding: 60px 0 0 0;
     }
-    .about-section.top {
-      padding-top: 30px !important;
-    }
   }
 
   @media (max-width:450px) {
@@ -459,6 +456,9 @@
 
     .cards.bottom .card.work {
       width: 100% !important;
+    }
+    p.quote {
+      font-size: 20px;
     }
   }
 
@@ -492,6 +492,9 @@
     }
     .colour-block {
       padding:20px;
+    }
+    .about-section.top {
+      padding-top: 30px !important;
     }
   }
 
