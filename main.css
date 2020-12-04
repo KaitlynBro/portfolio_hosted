@@ -15,12 +15,14 @@
     position: relative;
     font-size: 55px;
     line-height: 65px;
+    display: inline-block;
+    width: fit-content
   }
 
   h1:before {
     content: '';
     background: #4CD7D0;
-    width: 235px;
+    width: 100%;
     position: absolute;
     z-index: -1;
     bottom: -5px;
@@ -538,7 +540,7 @@
     .overview-content .main {
       order: 1;
     }
-    .overview-content .sidebar {
+    .overview-content .sidebar:not {
       order: 0;
       border-bottom: 3px solid black;
       margin-bottom: 20px;
@@ -548,10 +550,41 @@
       flex-direction: column;
       align-items: flex-end;
     }
+        .secondary-assets {
+      flex-direction: column;
+    }
   }
 
   @media (min-width: 1140px) {
     .hori-timeline .events .event-list .event-date {
         top: -12px;
     }
+  }
+
+  /* graphic design page */
+
+  .mockup-btn {
+    margin-bottom: 30px;
+  }
+
+  .mockup {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .secondary-assets {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  .secondary-assets h2 {
+    margin-bottom: 30px;
+  }
+
+  img.style-guide {
+    width: 100%;
+    height: 100%;
   }
