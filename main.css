@@ -255,6 +255,16 @@
     height: 6rem;
   }
 
+  .card.work svg.skis {
+    width: 25rem;
+    height: 8rem;
+  }
+
+  .card.work svg.tree-svg {
+    width: 25rem;
+    height: 8rem;
+  }
+
   .card-title.work {
     position: relative;
     width: fit-content;
