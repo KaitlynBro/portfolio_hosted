@@ -19,8 +19,8 @@
         }
       }
     });
-  
-    // Scroll to top button appear
+  js-scroll-trigger
+    // Scroll to top button appearB
     $(document).scroll(function() {
       var scrollDistance = $(this).scrollTop();
       if (scrollDistance > 100) {
